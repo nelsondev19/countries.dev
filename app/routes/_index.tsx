@@ -31,7 +31,7 @@ export default function Index() {
           Countries API
         </h1>
         <p className="text-center text-xl max-w-screen-md m-auto mt-4">
-          A powerful and public GraphQL API designed for developers and data
+          A powerful public GraphQL API designed for developers and data
           enthusiasts who want to access country information easily. You can use
           in any project.
         </p>
