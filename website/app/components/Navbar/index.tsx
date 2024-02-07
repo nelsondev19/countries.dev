@@ -4,7 +4,7 @@ import BtnGitHubStars from "./BtnGitHubStars";
 function Navbar() {
   return (
     <>
-      <nav className="hidden md:block backdrop-blur-lg py-7 px-3 z-50 sticky top-0 m-auto max-w-screen-lg">
+      <nav className="hidden md:block backdrop-blur-lg py-5 px-3 z-50 sticky top-0 m-auto max-w-screen-lg">
         <div>
           <div className="flex justify-between gap-10">
             <div className="grid place-content-center">
@@ -69,7 +69,7 @@ const paths = [
   {
     id: "1",
     name: "Home",
-    path: "#",
+    path: "/",
   },
   {
     id: "2",
@@ -80,10 +80,5 @@ const paths = [
     id: "3",
     name: "Status",
     path: "https://status.countries.dev",
-  },
-  {
-    id: "4",
-    name: "About",
-    path: "/about",
   },
 ];
