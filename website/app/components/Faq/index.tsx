@@ -11,9 +11,7 @@ function Faq() {
           FAQ{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="25.67976"
-            height="50.45487"
-            className="fill-current"
+            className="fill-current size-10"
             viewBox="0 0 25.67976 50.45487"
           >
             <path
