@@ -57,7 +57,7 @@ export default function Index() {
         </h1>
         <p
           id="description"
-          className="text-center text-lg max-w-screen-sm m-auto mt-4"
+          className="text-center max-w-screen-sm m-auto mt-4"
         >
           A powerful public GraphQL API designed for developers and data
           enthusiasts who want to access country information easily. You can use
@@ -110,7 +110,7 @@ export default function Index() {
         </h2>
         <p
           id="description-open-source"
-          className="text-center text-lg max-w-screen-sm m-auto mt-4"
+          className="text-center max-w-screen-sm m-auto mt-4"
         >
           Our database is available on GitHub - feel free to read, review, or
           contribute to it however you want!.
