@@ -15,7 +15,7 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "A powerful and public GraphQL API designed to empower developers and data enthusiasts. You can use in any project.",
+        "A powerful public GraphQL API designed to empower developers and data enthusiasts.",
     },
   ];
 };
