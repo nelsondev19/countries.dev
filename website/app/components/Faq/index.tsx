@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 function Faq() {
   return (
-    <div className="grid md:h-screen place-content-center p-3">
+    <div className="grid md:h-[80vh] place-content-center p-3">
       <div className="max-w-screen-md m-auto">
         <h2
           id="title-faq"
@@ -11,7 +11,7 @@ function Faq() {
           FAQ{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="fill-current size-10"
+            className="fill-current size-6 md:size-10"
             viewBox="0 0 25.67976 50.45487"
           >
             <path

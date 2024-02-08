@@ -11,7 +11,7 @@ function OpenSource() {
         Open Source{" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="fill-current size-10"
+          className="fill-current size-6 md:size-10"
           viewBox="0 0 38.67258 46.06185"
         >
           <path
