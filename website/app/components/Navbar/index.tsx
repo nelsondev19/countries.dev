@@ -16,7 +16,7 @@ function Navbar() {
               </Link>
             </div>
             <div className="grid place-content-center">
-              <ul className="flex gap-3 justify-center items-center">
+              <ol className="flex gap-3 justify-center items-center">
                 {paths.map(({ name, path }) => {
                   return (
                     <li key={`path-${name.toLowerCase()}`}>
@@ -32,7 +32,7 @@ function Navbar() {
                 })}
 
                 <BtnGitHubStars />
-              </ul>
+              </ol>
             </div>
           </div>
         </div>

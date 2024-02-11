@@ -40,9 +40,9 @@ function BtnGitHubStars() {
         <path d="M9 18c-4.51 2-5-2-7-2" />
       </svg>
       Star on GitHub
-      <div className="bg-[var(--bg-btn)] text-black px-2 py-1 rounded-xl">
+      <span className="bg-[var(--bg-btn)] text-black px-2 py-1 rounded-xl">
         {Stars.toLocaleString("en-US")}
-      </div>
+      </span>
     </Link>
   );
 }
