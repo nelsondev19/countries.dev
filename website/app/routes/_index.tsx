@@ -3,19 +3,97 @@ import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 
 // COMPONENTS
-import Faq from "../components/Faq";
+import Faq, { faqs } from "../components/Faq";
 import OpenSource from "../components/OpenSource";
 
 // FUNCTIONS
 import { handleCopyClick } from "../functions/handleCopyClick";
 
+const parseLdJson = () => {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ question, answer }) => {
+      return {
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: answer,
+        },
+      };
+    }),
+  };
+  return data;
+};
+
+const title = "Countries API";
+const description =
+  "A powerful public GraphQL API designed to empower developers and data enthusiasts.";
+
+const domain = "https://www.countries.dev/";
+
 export const meta: MetaFunction = () => {
   return [
-    { title: "Countries API" },
+    { title: title },
     {
       name: "description",
-      content:
-        "A powerful public GraphQL API designed to empower developers and data enthusiasts.",
+      content: description,
+    },
+    {
+      property: "theme-color",
+      content: "#a2e770",
+    },
+    {
+      property: "og:title",
+      content: title,
+    },
+    {
+      property: "og:description",
+      content: description,
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:image",
+      content: "/thumbnail.png",
+    },
+    {
+      property: "og:url",
+      content: domain,
+    },
+    {
+      property: "og:site_name",
+      content: new URL(domain).hostname,
+    },
+    {
+      property: "og:locale",
+      content: "en_US",
+    },
+    {
+      property: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      property: "twitter:creator",
+      content: "@nelsonmendezz_",
+    },
+    {
+      property: "twitter:domain",
+      content: new URL(domain).hostname,
+    },
+    {
+      property: "twitter:image",
+      content: "/thumbnail.png",
+    },
+    {
+      property: "twitter:site",
+      content: "@nelsonmendezz_",
+    },
+    {
+      "script:ld+json": parseLdJson(),
     },
   ];
 };
@@ -60,12 +138,10 @@ export default function Index() {
           id="title"
           className="text-center text-3xl md:text-6xl font-semibold text-gray-200"
         >
-          Countries API
+          {title}
         </h1>
         <p id="description" className="text-center max-w-screen-sm m-auto mt-4">
-          A powerful public GraphQL API designed for developers and data
-          enthusiasts who want to access country information easily. You can use
-          in any project.
+          {description}
         </p>
         <div className="flex justify-center items-center mt-7">
           <Link
