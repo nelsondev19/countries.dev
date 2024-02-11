@@ -3,8 +3,8 @@ import BtnGitHubStars from "./BtnGitHubStars";
 
 function Navbar() {
   return (
-    <>
-      <nav className="hidden md:block backdrop-blur-lg py-5 px-3 z-50 sticky top-0 m-auto max-w-screen-lg">
+    <header>
+      <div className="hidden md:block backdrop-blur-lg py-5 px-3 z-50 sticky top-0 m-auto max-w-screen-lg">
         <div>
           <div className="flex justify-between gap-10">
             <div className="grid place-content-center">
@@ -15,8 +15,8 @@ function Navbar() {
                 🌎 Countries API
               </Link>
             </div>
-            <div className="grid place-content-center">
-              <ol className="flex gap-3 justify-center items-center">
+            <nav className="grid place-content-center">
+              <ul className="flex gap-3 justify-center items-center">
                 {paths.map(({ name, path }) => {
                   return (
                     <li key={`path-${name.toLowerCase()}`}>
@@ -31,14 +31,16 @@ function Navbar() {
                   );
                 })}
 
-                <BtnGitHubStars />
-              </ol>
-            </div>
+                <li>
+                  <BtnGitHubStars />
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </nav>
+      </div>
 
-      <nav className="block md:hidden backdrop-blur-lg p-3 z-50 sticky top-0 m-auto max-w-screen-lg">
+      <header className="block md:hidden backdrop-blur-lg p-3 z-50 sticky top-0 m-auto max-w-screen-lg">
         <div className="flex justify-between gap-10">
           <div className="grid place-content-center">
             <Link
@@ -58,8 +60,8 @@ function Navbar() {
             </svg>
           </div>
         </div>
-      </nav>
-    </>
+      </header>
+    </header>
   );
 }
 
