@@ -29,7 +29,7 @@ const parseLdJson = () => {
 
 const title = "Countries API";
 const description =
-  "A powerful public GraphQL API designed to empower developers and data enthusiasts.";
+  "A powerful public GraphQL API designed for developers and data enthusiasts who want to access country information easily.";
 
 const domain = "https://www.countries.dev/";
 
