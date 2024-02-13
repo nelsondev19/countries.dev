@@ -1,38 +1,15 @@
-# Welcome to Remix!
+<h1 align="center">
+  <span>Countries API</span>
+</h1>
 
-- [Remix Docs](https://remix.run/docs)
+<p align="center">
+  <span>A powerful public GraphQL API designed for developers and data enthusiasts who want to access country information easily.</span>
+</p>
 
-## Development
-
-From your terminal:
-
-```sh
-npm run dev
-```
-
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+<p align="center">
+  <a href="https://www.countries.dev" target="_blank">Get Started</a>
+  &bull;
+  <a href="https://playground.countries.dev" target="_blank">GraphQL Playground</a>
+  &bull;
+  <a href="https://status.countries.dev" target="_blank">Status</a>
+</p>
