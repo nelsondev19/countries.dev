@@ -22,9 +22,8 @@ function BtnGitHubStars() {
   return (
     <Link
       to="https://github.com/nelsondev19/countries.dev"
-      target="_blank"
       className="p-2 gap-2 text-sm max-w-52 flex justify-center items-center bg-transparent-effect duration-300 text-center font-semibold rounded-xl border border-gray-700 hover:border-gray-600"
-      rel="noreferrer"
+      rel="external"
     >
       <svg
         stroke="currentColor"

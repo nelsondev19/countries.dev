@@ -17,13 +17,14 @@ function Navbar() {
             </div>
             <nav className="grid place-content-center">
               <ul className="flex gap-3 justify-center items-center">
-                {paths.map(({ name, path }) => {
+                {paths.map(({ name, path, rel }) => {
                   return (
                     <li key={`path-${name.toLowerCase()}`}>
                       <Link
                         to={path}
                         className="font-semibold hover:underline hover:text-gray-100 duration-300"
                         id={`link-${name.toLowerCase()}`}
+                        rel={rel}
                       >
                         {name}
                       </Link>
@@ -72,15 +73,18 @@ const paths = [
     id: "1",
     name: "Home",
     path: "/",
+    rel: "",
   },
   {
     id: "2",
     name: "Playground",
     path: "https://playground.countries.dev",
+    rel: "external",
   },
   {
     id: "3",
     name: "Status",
     path: "https://status.countries.dev",
+    rel: "external",
   },
 ];
