@@ -1,14 +1,7 @@
-import { useEffect } from "react";
 import { Link, useLocation } from "@remix-run/react";
 
 function SidebarMobile() {
   const { pathname } = useLocation();
-
-  useEffect(() => {
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, []);
 
   return (
     <button
@@ -27,6 +20,7 @@ function SidebarMobile() {
         ) as HTMLElement;
 
         sidebarBgMobile.classList.add("hide-bg-sidebar-mobile");
+        document.body.classList.remove("overflow-hidden");
       }}
     >
       <aside className="fixed top-0 left-0 z-40 w-[80%] md:w-[45%] h-screen">
