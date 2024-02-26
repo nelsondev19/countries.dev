@@ -74,7 +74,6 @@ html {
   animation: 1.2s ease-in 0s 1 normal forwards running opacityanimation;
 }
 
-
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -98,7 +97,7 @@ html {
   }
 }
 
-.hide-bg-sidebar-mobile{
+.hide-bg-sidebar-mobile {
   visibility: hidden;
 }
 

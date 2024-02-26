@@ -83,7 +83,7 @@ function Navbar() {
       </nav>
 
       <div className="block md:hidden">
-        <SidebarMobile />
+        <SidebarMobile paths={paths} />
       </div>
     </header>
   );
